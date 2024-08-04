@@ -1,1 +1,3 @@
- 
+<form [formGroup]="this.loginForm" (submit)="this.onSubmit()">
+  <button type="submit" [disabled]="!this.loginForm.valid"></button>
+</form>
